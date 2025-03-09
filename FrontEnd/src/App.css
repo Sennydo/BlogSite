@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    color: #e8e5f5;
+}
+
+.main-card {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height:fit-content;
+    width:20rem;    
+
+    background-color: #a297d8;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.main-card img {
+    opacity: 70%;
+}
+
+.main-card h3 {
+    text-align: left;
+    color: #e8e5f5;
+    margin: 5%;
+}
+.main-card h1 {
+    
+    color: #e8e5f5;
+}
+
+.main-card div {
+    height: 60%;
+    width: 60%;
+}
+
+
+
+.display-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+
+}
+
+
+
+body {
+    background-color: #5E548E;
+}

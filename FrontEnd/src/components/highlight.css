@@ -1,0 +1,26 @@
+.highlight-page {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.highlight-poster {
+    width: auto;
+    padding-bottom: 2rem;
+    margin-left: 10%;
+}
+
+.highlight-poster img {
+    max-height: 100%;
+    max-width: auto;
+}
+
+
+.highlight-content {
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
