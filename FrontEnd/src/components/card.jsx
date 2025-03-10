@@ -1,12 +1,12 @@
 import '../App.css'
 
-const Card = () => {
+const Card = ({name, imUrl="https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg"}) => {
     return(
         <>
         <div className='main-card'>
-            <h1>SAO</h1>
+            <h1>{name}</h1>
             <img
-                src="https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg"
+                src={imUrl}
         
               alt="image"/>
             
