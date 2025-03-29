@@ -6,16 +6,20 @@ import './App.css'
 import Highlight from './components/highlight'
 
 function App() {  
-  const [cardCont, setCardCont] = useState([])
+  const [cardCont, setCardCont] = useState([{
+    name: "Sao",
+    imgUrl: "https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg",
+  },{
+    name: "Pokemon",
+    imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
+  }])
 
   useEffect(() => {
-    setCardCont([{
-      name: "Sao",
-      imgUrl: "https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg",
-    },{
-      name: "Pokemon",
-      imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
-    }])
+    fetch("./db.json")
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    })
   }, [])
 
 
