@@ -1,0 +1,32 @@
+.highlight-page {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.highlight-poster {
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-poster img {
+    max-height: 100%;
+    max-width: auto;
+}
+
+
+.highlight-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 80%;
+}
+
+.highlight-content h1 {
+    padding-left: 20%;
+}
