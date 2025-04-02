@@ -1,4 +1,4 @@
-import './highlight.css'
+import './highlight.module.css'
 
 const Highlight = () => {
     return(

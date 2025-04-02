@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
-import Card from "@/components/Card";
+import Card from "@/(components)/Card";
 import { useState, useEffect } from "react";
-import Highlight from "@/components/highlight";
+import Highlight from "@/(components)/highlight/highlight";
 
 export default function Home() {
     const [cardCont, setCardCont] = useState([{
