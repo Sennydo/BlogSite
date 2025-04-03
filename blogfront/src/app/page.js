@@ -20,12 +20,8 @@ export default function Home() {
       <div>
         <Highlight />
         <div className='display-div'>
+          
           <Card name={"Sword Art Online"} />
-          <Card name={"Sao"} />
-          <Card name={"Sao"} />
-          <Card name={"Sao"} />
-          <Card name={"Sao"} />
-          <Card name={"Sao"} />
           {cardCont.map((cards, idx) => (
             <Card key={idx} name={cards.name} imUrl={cards.imgUrl} />
           ))}
