@@ -1,11 +1,14 @@
 import "./globals.css";
+import Navbar from "@/(components)/navbar/navbar"
+import {lexend} from "@/(components)/fonts";
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body>
+      <body className={`${lexend.className} antialiased`}>
         <header>
-          <h1>HI how are you</h1>
+          <Navbar />
         </header>
         <main>
           {children}
