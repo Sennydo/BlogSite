@@ -18,7 +18,6 @@ export default function Home() {
   
     return (
       <div className='master-page'>
-        <h1>Anime Reviews</h1>
         <Highlight />
         <div className='display-div'>
           <Card name={"Sao"} />
