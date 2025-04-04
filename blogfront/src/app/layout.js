@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/(components)/navbar/navbar"
+import Footer from "@/(components)/footer/footer";
 import {lexend} from "@/(components)/fonts";
 
 export default function RootLayout({ children }) {
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-          <h1>Footer</h1>
+          <Footer />
         </footer>
       </body>
     </html>

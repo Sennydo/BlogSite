@@ -7,7 +7,7 @@ import Grid from "@/(components)/grid/grid";
 
 export default function Home() {
     const [cardCont, setCardCont] = useState([{
-      name: "Sao",
+      name: "Sword Art Online",
       imgUrl: "https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg",
     },{
       name: "Pokemon",

@@ -2,11 +2,12 @@ import './highlight.module.css'
 
 const Highlight = () => {
     return(
-        <div className="flex w-full h-[30rem] overflow-clip justify-around mb-5">
+        <div className="flex w-full h-[30rem] overflow-clip justify-around mb-[3rem]">
             
             <div className='w-[50%] flex-col justify-center items-center text-center'>
                 <h1 className="text-6xl">Sword Art Online</h1>
-                <h2>Review Content</h2>
+                <br></br>
+                <h2>Anime that shaped the world, recreated the fantasy world concept</h2>
             </div>
             <div className="w-[45%] h-max flex">
                 <div className='w-[70%] h-[30rem] flex'>
