@@ -1,6 +1,7 @@
 import {initializeApp} from "firebase"
 import {getAnalytics} from "firebase/analytics"
 import {getFirestore} from "firebase/storage"
+import firebase from "firebase/app"
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -11,3 +12,6 @@ const firebaseConfig = {
     appId: process.env.FIREBASE_APP_ID,
     measurementID: process.env.FIREBASE_MEASUREMENT_ID,
 }
+
+const app = !firebase.getApps.length ? initializeApp(firebaseConfig) : getApp();
+const analytics = getAnalytics(app)
