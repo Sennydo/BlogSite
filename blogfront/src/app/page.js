@@ -3,6 +3,7 @@ import Image from "next/image";
 import Card from "@/(components)/Card";
 import { useState, useEffect } from "react";
 import Highlight from "@/(components)/highlight/highlight";
+import Grid from "@/(components)/grid/grid";
 
 export default function Home() {
     const [cardCont, setCardCont] = useState([{
@@ -13,12 +14,15 @@ export default function Home() {
       imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
     }])
   
-  
-  
-  
     return (
       <div>
         <Highlight />
+        <Grid cardCount={cardCont} />
+      </div>
+    )
+}
+
+/*
         <div className='display-div'>
           
           <Card name={"Sword Art Online"} />
@@ -26,6 +30,4 @@ export default function Home() {
             <Card key={idx} name={cards.name} imUrl={cards.imgUrl} />
           ))}
         </div>
-      </div>
-    )
-}
+*/
