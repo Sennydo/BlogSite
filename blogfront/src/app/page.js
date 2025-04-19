@@ -28,6 +28,9 @@ export default function Home() {
   
     return (
       <div>
+        <header>
+          <Navbar />
+        </header>
         <Highlight />
         <Grid cardCount={cardCont} />
       </div>
