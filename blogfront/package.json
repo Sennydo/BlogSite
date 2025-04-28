@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/node-fetch": "^2.6.13",
+    "@supabase/postgrest-js": "^1.19.4",
     "@supabase/supabase-js": "^2.49.4",
     "firebase": "^10.12.5",
     "next": "15.2.4",

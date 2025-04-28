@@ -1,3 +1,4 @@
+export const revalidate = 43200;
 
 import Image from "next/image";
 import Card from "@/(components)/Card";
@@ -11,6 +12,7 @@ export default async function Home() {
 
   const {data} = await supabase.from("showCards").select()
   
+  /*
   const cardCont = [
     {
       name: "Sword Art Online",
@@ -20,27 +22,8 @@ export default async function Home() {
       imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
     }
   ]
-  
-  /*
-    const [cardCont, setCardCont] = useState([]
-      /*[{
-      name: "Sword Art Online",
-      imgUrl: "https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg",
-    },{
-      name: "Pokemon",
-      imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
-    }]
-      )
-
-    useEffect(()=> {
-      async function fetchDat(){
-        const {data} = await supabase.from("showCards").select()
-        setCardCont(data);
-      }
-      fetchDat()
-    }, [])
-
     */
+  
   
     return (
       <div>
