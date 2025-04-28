@@ -3,22 +3,6 @@ import { useState, useRef, useEffect } from "react";
 import React from "react";
 
 const ExpandCard = () => {
-
-    const cards = [
-        {
-          title: 'Card #1',
-          sections: [
-            { title: 'Section A', content: 'Content for Section A…' },
-            { title: 'Section B', content: 'Content for Section B…' },
-          ],
-        },
-        {
-          title: 'Card #2',
-          sections: [
-            { title: 'Another Section', content: 'More content here…' },
-          ],
-        },
-      ]
     
     const [isOpen, setOpen] = useState(false);
     const valRef = useRef(null);

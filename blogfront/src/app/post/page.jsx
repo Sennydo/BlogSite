@@ -3,7 +3,7 @@ import ScrollCard from "@/(components)/scrollCard/scrollCard"
 import PostNav from "@/(components)/postNav"
 export default function PostPage() {
     return (
-        <div className="h-vh">
+        <div>
             <PostNav />
             <h1 className="text-center text-8xl mt-3">Sword Art Online</h1>
             <div className="flex justify-center h-[15rem] m-[3rem]">

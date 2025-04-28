@@ -1,12 +1,27 @@
-"use client"
+
 import Image from "next/image";
 import Card from "@/(components)/Card";
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 import Highlight from "@/(components)/highlight/highlight";
 import Grid from "@/(components)/grid/grid";
 import { supabase } from "../../lib/supabase";
+import Navbar from "@/(components)/navbar/navbar";
 
-export default function Home() {
+export default async function Home() {
+
+  const {data} = await supabase.from("showCards").select()
+  
+  const cardCont = [
+    {
+      name: "Sword Art Online",
+      imgUrl: "https://www.roadtovr.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg",
+    },{
+      name: "Pokemon",
+      imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
+    }
+  ]
+  
+  /*
     const [cardCont, setCardCont] = useState([]
       /*[{
       name: "Sword Art Online",
@@ -15,7 +30,7 @@ export default function Home() {
       name: "Pokemon",
       imgUrl: "https://cdn.europosters.eu/image/750/pokemon-eevee-i32673.jpg",
     }]
-      */)
+      )
 
     useEffect(()=> {
       async function fetchDat(){
@@ -25,6 +40,7 @@ export default function Home() {
       fetchDat()
     }, [])
 
+    */
   
     return (
       <div>
@@ -32,7 +48,7 @@ export default function Home() {
           <Navbar />
         </header>
         <Highlight />
-        <Grid cardCount={cardCont} />
+        <Grid cardCount={data} />
       </div>
     )
 }

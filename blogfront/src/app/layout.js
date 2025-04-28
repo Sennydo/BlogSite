@@ -7,13 +7,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${lexend.className} antialiased`}>
-        <main>
+      <body className={`${lexend.className} antialiased flex flex-col min-h-screen`}>
+        <main className="flex-1">
           {children}
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </body>
     </html>
   );
