@@ -8,7 +8,7 @@ import { supabase } from "../../../../lib/supabase";
 const Content = async ({params}) => {
     const {id} = await params;
     //const idUse = 
-    const {data} = await supabase.from("showCards").select().eq('id', id)
+    const {data} = await supabase.from("postInfo").select().eq('id', id)
     if (data.length === 0){
         return (
             <h1>Page does not exist</h1>
@@ -22,8 +22,8 @@ const Content = async ({params}) => {
             <img src={data[0].img_url}></img>
         </div>
         <br></br>
-        <ExpandCard />
-        <ExpandCard />
+        <ExpandCard data={data} />
+        <ExpandCard data={data} />
     </div>
     );
 }
