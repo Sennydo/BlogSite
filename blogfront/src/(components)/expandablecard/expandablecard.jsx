@@ -7,6 +7,7 @@ const ExpandCard = ({data}) => {
     const [isOpen, setOpen] = useState(false);
     const valRef = useRef(null);
     const [cardHeight, setCardHeight] = useState(0);
+    console.log(data)
 
     useEffect(() => {
         if (valRef.current == null) {
@@ -21,13 +22,13 @@ const ExpandCard = ({data}) => {
             <button className="w-full p-5" onClick={() => {
                 setOpen(o => !o)
             }}>
-                <h1 className="text-center text-2xl">SAO First Cut Overview (Appropriate if deciding to start) *Will contain Spoilers from episode 1*</h1>
+                <h1 className="text-center text-2xl">{data.tag}</h1>
             </button>
             <div className="overflow-hidden transition-[max-height] duration-300" style={{maxHeight: cardHeight}}>
                 <div ref={valRef} className="p-4">
                     <div>
                       <h1 className="text-xl mx-[2rem]">
-                        {data[0].first_rev}
+                        {data.review}
                       </h1>
                     </div>
                 </div>

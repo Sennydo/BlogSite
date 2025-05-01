@@ -17,13 +17,13 @@ const Content = async ({params}) => {
     return(
         <div>
         <PostNav />
-        <h1 className="text-center text-8xl mt-3">Sword Art Online</h1>
+        <h1 className="text-center text-8xl mt-3">{data[0].name}</h1>
         <div className="flex justify-center h-[15rem] m-[3rem]">
             <img src={data[0].img_url}></img>
         </div>
         <br></br>
-        <ExpandCard data={data} />
-        <ExpandCard data={data} />
+        <ExpandCard data={data[0].firstValid} />
+        <ExpandCard data={data[0].firstValid} />
     </div>
     );
 }
